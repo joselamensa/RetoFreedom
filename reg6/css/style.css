@@ -1,0 +1,79 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/*seccion uno 1*/
+
+.container1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.seccionuno {
+    background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/backgrounds/fondodiv1pc.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.container1 h1 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.container1 p {
+    font-size: 30px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-top: 1vh;
+}
+.textoverde {
+    font-weight: bold;
+    background: linear-gradient(to right, #4DBD49, #69D165, #86E583);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.cta-button {
+    margin-top: 0;
+    margin-bottom: 10vh;
+    padding: 16px 90px;
+    background: linear-gradient(90deg, #4DBD49 0%, #7EDB7B 50%, #B7FFB5 100%);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: none !important;
+    border-radius: 11px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.seccionuno, .footerdiv1 {
+    display: block;
+    width: 100%;
+}
+
+
+/* SECCION 2 */
