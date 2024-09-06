@@ -1,0 +1,462 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccionuno {
+    background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg3/backgrounds/div1reg3pc.webp');
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.right-section {
+    flex: 1;
+    text-align: right;
+}
+
+.img-logo {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 10vh;
+}
+
+.container1 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    margin-bottom: 1vh;
+}
+
+
+.container1 h3 {
+    color: #333A32;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.container1 p {
+    color: #333A32;
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 5vh;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 22px 90px;
+    background: linear-gradient(90deg, #4DBD49 20%, #80e17d 50%, #4DBD49 80%) !important;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    border: none !important;
+    border-radius: 11px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botonesglow {
+    animation: pisca 1.5s infinite;
+    box-shadow: 0px 0px 21px -6px #4DBD49;
+}
+
+.side-image {
+    max-width: 130%;
+    height: auto;
+}
+
+.logofreedom1{
+    max-width: 70%;
+    height: auto;
+    margin: 1vh;
+}
+
+
+@keyframes pisca {
+    70% {
+        box-shadow: 0 0 0 25px rgba(0,0,0,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+}
+
+/* SECCION 1 MOBILE */
+
+.seccionmobile {
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg3/backgrounds/div1reg3mob.webp');
+    background-position: 46.83% 68.0242%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.containermobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.containermobile > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo2 {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.texto2 {
+    font-size: 14px;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
+
+.containermobile h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.h1mobile {
+    line-height: 4vh;
+}
+
+.testing {
+    margin-top: -5vh;
+}
+/* SECCION 2 */
+.secciondos {
+    background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg3/backgrounds/div2reg3pc.webp');
+    height: 1645.41px;
+    background-position: 54.6539% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.container2 h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container2 h1 {
+    background: linear-gradient(to right, #75DE71, #61CE5D, #4DBD49);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 48px;
+    margin-top: 10px;
+}
+/* Ocultar imágenes móviles en pantallas grandes */
+.mobile-image {
+    display: none;
+  }
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 10px 0;
+}
+/* Ocultar imágenes de escritorio en dispositivos móviles y mostrar las imágenes móviles */
+@media (max-width: 768px) {
+    .desktop-image {
+      display: none;
+    }
+    .mobile-image {
+      display: block;
+      width: 100%; /* Ajusta según tus necesidades */
+      height: auto;
+    }
+  }
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71.992px;
+    background-color: black;
+    color: rgb(194, 194, 194);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Media Queries */
+
+/* Ajustes para pantallas medianas (laptops, monitores pequeños) */
+@media (max-width: 1024px) {
+    .container1 h1 {
+        font-size: 36px;
+        letter-spacing: 12px;
+    }
+
+    .container1 h3 {
+        font-size: 30px;
+    }
+
+    .container1 p {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        padding: 20px 70px;
+        font-size: 22px;
+    }
+    .botonmobile {
+        margin-bottom: 1vh;
+    }
+    
+}
+
+/* Ajustes para pantallas pequeñas (tablets y móviles en modo retrato) */
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container1 h1 {
+        font-size: 16px;
+        letter-spacing: 8px;
+        margin: 10px 0;
+    }
+
+    .container1 h3 {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    .container1 p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .img-logo {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .side-image {
+        max-width: 80%;
+        margin: 20px 0;
+    }
+
+    .seccionuno {
+        height: auto;
+        padding: 20px;
+    }
+
+    .left-section, .right-section {
+        padding: 0;
+    }
+    .container2 {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container2 h1 {
+        font-size: 48px;
+        margin-top: 8px;
+        line-height: 7vh;
+    }
+
+    .container2 h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        margin-top: 12vh; /* Ajusta este valor según sea necesario */
+    }
+    
+    .image-container {
+        margin: 10px 0; /* Ajusta el espaciado de las imágenes */
+    }
+    .containermobile {
+        font-size: 12px;
+    }
+    .logo2 {
+        margin-bottom: 0;
+    }
+    .botonmobile {
+        margin-bottom: 3vh;
+    }
+    
+.logofreedom {
+    max-width: 80%;
+    height: auto;
+    margin-top: 0px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 0px;
+    }
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 480px) {
+    .secciondos {
+        background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg3/backgrounds/div2reg3mob.webp');
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        background-position: 54.882% 7.5763%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container1 h1 {
+        font-size: 36px;
+        letter-spacing: 4px;
+        margin: 10px 0;
+    }
+    .container1 h3 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .container1 p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .cta-button {
+        padding: 2vh 0;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .img-logo {
+        max-width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .side-image {
+        max-width: 80%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer h2 {
+        font-size: 10px;
+    }
+    .logo2 {
+        margin-bottom: 0;
+    }
+    .botonmobile {
+        margin-bottom: 3vh;
+    }
+    
+.logofreedom {
+    max-width:80%;
+    height: auto;
+    margin-top: 0px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .seccionuno {
+        display: none;
+    }
+
+    .seccionmobile {
+        display: block;
+    }
+}
+@media (min-width: 769px) {
+    .seccionmobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .seccionuno {
+        display: none;
+    }
+
+    .seccionmobile {
+        display: block;
+    }
+    .side-image {
+        max-width: 85%;
+    }
+}
+@media (min-width: 1025px) {
+    .seccionmobile {
+        display: none;
+    }
+    
+}
