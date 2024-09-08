@@ -70,6 +70,19 @@ body {
     text-decoration: none;
     display: inline-block;
 }
+
+.botonesglow {
+    animation: pisca 1.5s infinite;
+    box-shadow: 0px 0px 21px -6px #4DBD49;
+}
+@keyframes pisca {
+    70% {
+        box-shadow: 0 0 0 25px rgba(0,0,0,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+}
 .seccionuno, .footerdiv1 {
     display: block;
     width: 100%;
@@ -79,6 +92,7 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    display: block;
 }
 
 .footerdiv1 img {
@@ -86,6 +100,71 @@ body {
     height: auto;
     display: block;
 }
+/*SECCION 1 MOBILE*/
+
+.seccionunomobile {
+    background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/backgrounds/fondodiv1mobfinal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.container1mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.container1mobile h1 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin: 1vh;
+}
+.container1mobile p {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin: 1vh;
+}
+.cta-buttonmobile {
+    margin-top: 0;
+    padding: 16px 25px;
+    background: linear-gradient(90deg, #4DBD49 0%, #7EDB7B 50%, #B7FFB5 100%);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border: none !important;
+    border-radius: 11px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+@media (min-width: 768px) {
+    .seccionuno { display: block; }
+    .seccionunomobile { display: none; }
+    .footerdiv1 { display: block; }
+}
+@media (max-width: 767px) {
+    .seccionuno { display: none; }
+    .seccionunomobile { display: block; }
+    .footerdiv1{ display: none; }
+}
+
 /* SECCION 2 */
 .secciondos {
     background-color: #ffffff;
@@ -96,15 +175,18 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
-.secciondos h1{
+
+.secciondos h1 {
     font-size: 48px;
 }
 
 .cards-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
     margin-bottom: 50px;
     width: 100%;
     max-width: 1200px;
@@ -112,9 +194,8 @@ body {
 
 .card {
     flex: 0 1 30%;
-    margin: 0 2%;
+    margin: 10px 2%;
 }
-
 
 .card img {
     width: 100%;
@@ -125,10 +206,15 @@ body {
 .imagen-texto-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .imagen-container {
-    width: 50%;
+    flex: 0 1 50%;
     padding-right: 20px;
 }
 
@@ -136,24 +222,91 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
 .texto-container {
-    width: 40%;
+    flex: 0 1 50%;
     text-align: left;
 }
 
-.texto-container h1{
+.texto-container h1 {
     font-size: 48px;
     line-height: 1.2;
     font-weight: bold;
     color: #4DBD49;
 }
-.texto-container p{
+
+.texto-container p {
     font-size: 22px;
     line-height: 1.2;
     color: #000000;
     margin-bottom: 10vh;
+}
+
+
+@media (max-width: 768px) {
+    .secciondos {
+        background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/backgrounds/fondodiv2mobfinal.webp');
+    }
+    .secciondos h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        flex: 0 1 100%;
+    }
+
+    .imagen-texto-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .imagen-container, .texto-container {
+        flex: 0 1 100%;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .imagen-container img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .texto-container h1 {
+        font-size: 28px;
+    }
+
+    .texto-container p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    .imagen-texto-container,
+    .imagen-texto-container3 {
+      flex-direction: column-reverse;
+    }
+  
+    .imagen-container,
+    .texto-container,
+    .imagen-container3,
+    .texto-container3 {
+      width: 100%;
+    }
+    .imagen-container,
+    .imagen-container3 {
+      order: 2;
+    }
+  
 }
 
 
@@ -169,61 +322,72 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
-.secciontres h1{
+
+.secciontres h1 {
     margin-top: 5vh;
     margin-bottom: 5vh;
     font-size: 40px;
     color: #FFFFFF;
 }
+
 .greenline {
     max-width: 50%;
     margin-left: 0;
     display: block;
 }
+
 .cards-container-seccion3 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     width: 100%;
     max-width: 1200px;
 }
 
 .card3 {
-    flex: 0 1 30%;
-    margin: 0 2%;
+    flex: 0 1 calc(33.333% - 40px);
+    margin: 0 20px 20px;
+    display: flex;
 }
-
 
 .card3 img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
+
 .imagen-texto-container3 {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .imagen-container3 {
-    width: 50%;
-    padding-left: 10vh;
+    flex: 0 1 50%;
+    padding-right: 20px;
 }
 
 .imagen-container3 img {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
 }
 
 .texto-container3 {
-    color: #FFFFFF;
-    width: 50%;
-    padding-left: 10vh;
+    flex: 0 1 50%;
     text-align: left;
+    color: #FFFFFF;
 }
+
 .texto-container3 h2 {
     color: #FFFFFF;
     font-size: 34px;
@@ -236,11 +400,11 @@ body {
 .texto-container3 ul {
     padding-inline-start: 2vh;
 }
+
 .texto-container3 ul li {
     color: #FFFFFF;
     font-size: 24px;
 }
-
 
 .footerdiv3 {
     margin-bottom: 10vh;
@@ -254,7 +418,8 @@ body {
     height: auto;
     display: block;
 }
-.metodofreedom h1{
+
+.metodofreedom h1 {
     background: linear-gradient(to right, #4DBD49, #86E583, #4DBD49);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -263,8 +428,77 @@ body {
     margin-top: 0;
     font-size: 64px;
 }
-.metodofreedom h2{
+
+.metodofreedom h2 {
     color: #FFFFFF;
     margin-bottom: 0;
     font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    .secciontres {
+        background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/backgrounds/fondodiv3mob.webp');
+    }
+
+    .secciontres h1 {
+        font-size: 28px;
+    }
+    .cards-container-seccion3 {
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card3 {
+        flex: 0 1 100%;
+        margin: 0 0 20px;
+    }
+
+    .imagen-texto-container3 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .imagen-container3, .texto-container3 {
+        flex: 0 1 100%;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .texto-container3{
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    .texto-container3 h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 1vh;
+    }
+    .greenline {
+        max-width: 105%;
+        margin-bottom: 1vh;
+    }
+    .texto-container3 ul li {
+        font-size: 18px;
+    }
+    .footerdiv3 img {
+        content: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/backgrounds/footerdediv1mob.png');
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .metodofreedom h1 {
+        font-size: 36px;
+    }
+
+    .metodofreedom h2 {
+        font-size: 24px;
+    }
+    .cta-button {
+        padding: 16px 45px;
+    }
 }
