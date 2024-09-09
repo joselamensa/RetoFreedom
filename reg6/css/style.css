@@ -159,6 +159,12 @@ body {
     .seccionunomobile { display: none; }
     .footerdiv1 { display: block; }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footerdiv1mob {
+        content: url("https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/backgrounds/footerdediv1pc.png");
+        display: block;
+    }
+}
 @media (max-width: 1024px) {
     .seccionuno { display: none; }
     .seccionunomobile { display: block; }
