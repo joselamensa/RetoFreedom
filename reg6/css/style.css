@@ -268,9 +268,12 @@ body {
         padding-left: 0;
     }
     .imagen-container img {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 0;
+    content: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/mockups/mockupPcxmobile.png');
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+
     }
 
     .texto-container h1 {
@@ -302,14 +305,12 @@ body {
     .texto-container3 {
       width: 100%;
     }
-    .imagen-container,
     .imagen-container3 {
       order: 2;
     }
+
   
 }
-
-
 
 /*SECCION 3*/
 
@@ -500,5 +501,15 @@ body {
     }
     .cta-button {
         padding: 16px 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .secciondos, .secciontres {
+        padding: 20px 10px;
+    }
+    
+    .imagen-texto-container, .imagen-texto-container3 {
+        padding: 10px;
     }
 }
