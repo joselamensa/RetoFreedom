@@ -159,10 +159,142 @@ body {
     .seccionunomobile { display: none; }
     .footerdiv1 { display: block; }
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     .seccionuno { display: none; }
     .seccionunomobile { display: block; }
     .footerdiv1{ display: none; }
+
+    .secciondos {
+        background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/backgrounds/fondodiv2mobfinal.webp');
+    }
+    .secciondos h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        flex: 0 1 100%;
+    }
+
+    .imagen-texto-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .imagen-container, .texto-container {
+        flex: 0 1 100%;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .imagen-container img {
+        content: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/mockups/mockupPcxmobile.png');
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+    }
+
+    .texto-container h1 {
+        font-size: 28px;
+    }
+
+    .texto-container p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    .imagen-texto-container3 {
+      flex-direction: column-reverse;
+    }
+  
+    .imagen-container,
+    .texto-container,
+    .imagen-container3,
+    .texto-container3 {
+      width: 100%;
+    }
+    .imagen-container3 {
+      order: 2;
+    }
+
+    .secciontres {
+        background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/backgrounds/fondodiv3mob.webp');
+    }
+
+    .secciontres h1 {
+        font-size: 28px;
+    }
+    .cards-container-seccion3 {
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card3 {
+        flex: 0 1 100%;
+        margin: 0 0 20px;
+    }
+
+    .imagen-texto-container3 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .imagen-container3, .texto-container3 {
+        flex: 0 1 100%;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .texto-container3{
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+    .texto-container3 h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 1vh;
+    }
+    .greenline {
+        max-width: 105%;
+        margin-bottom: 1vh;
+    }
+    .texto-container3 ul li {
+        font-size: 18px;
+    }
+    .footerdiv3 img {
+        content: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg6/backgrounds/footerdediv1mob.png');
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .metodofreedom h1 {
+        font-size: 36px;
+    }
+
+    .metodofreedom h2 {
+        font-size: 24px;
+    }
+    .cta-button {
+        padding: 16px 45px;
+    }
+
+    .secciondos, .secciontres {
+        padding: 20px 10px;
+    }
+    
+    .imagen-texto-container, .imagen-texto-container3 {
+        padding: 10px;
+    }
 }
 
 /* SECCION 2 */
@@ -311,6 +443,8 @@ body {
 
   
 }
+
+
 
 /*SECCION 3*/
 
@@ -501,15 +635,5 @@ body {
     }
     .cta-button {
         padding: 16px 45px;
-    }
-}
-
-@media (max-width: 768px) {
-    .secciondos, .secciontres {
-        padding: 20px 10px;
-    }
-    
-    .imagen-texto-container, .imagen-texto-container3 {
-        padding: 10px;
     }
 }
