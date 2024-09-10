@@ -37,7 +37,7 @@ body {
 .left-section {
     flex: 1;
     text-align: left;
-    padding-left: 10%;
+    padding-left: 5vh;
 }
 
 .right-section {
@@ -48,7 +48,7 @@ body {
 .img-logo {
     max-width: 60%;
     height: auto;
-    margin-bottom: 10vh;
+    margin-bottom: 3vh;
 }
 
 .container1 h1 {
@@ -70,6 +70,8 @@ body {
     font-size: 24px;
     margin: 0px;
     font-family: 'DM sans', sans-serif;
+    line-height: 1.2;
+
 }
 .p2p2 {
     color: #333A32;
@@ -97,7 +99,7 @@ body {
 }
 
 .side-image {
-    max-width: 100%;
+    max-width: 120%;
     height: auto;
 }
 
@@ -176,6 +178,130 @@ body {
     height: auto;
     line-height: normal;
   }
+  
+/* SECCION 1 MOBILE */
+.seccionunomobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .seccionuno {
+        display: none;
+    }
+    .seccionunomobile {
+        display: block;
+        background-color: #f5f5f5;
+        background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg8/backgrounds/Div1Mobile');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+
+    .container1mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .img-logomobile {
+        width: 60%;
+    }
+
+    .side-imagemobile {
+        width: 70vh;
+        margin-bottom: 0px;
+        transform: translateY(-6vh);
+    }
+
+    .seccionunomobile h1 {
+        font-size: 32px;
+        color: #333;
+        line-height: 1.2;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0;
+        margin-top: 0;
+        transform: translateY(-6vh);
+
+    }
+
+    .p1p1mobile {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 0px;
+        color: #242424;
+        transform: translateY(-6vh);
+        font-family: 'DM sans', sans-serif;
+        font-weight: 700;
+    }
+    
+    .p2p2mobile {
+        font-family: 'DM sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000000;
+        margin-top: 4vh;
+        transform: translateY(-6vh);
+
+    }
+    .cta-button {
+        padding: 3vh 15vh;
+        font-size: 16px;
+        margin-top: 2vh;
+        transform: translateY(-6vh);
+
+    }
+
+    .heaverdemobile {
+        color: #4DBD49;
+    }
+    /* Responsividad del timer */
+    .timer-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .timer-text {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .timer-text h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .time-unit {
+        margin: 5px;
+    }
+
+    .time-unit span {
+        font-size: 1.2em;
+        padding: 8px 12px;
+        width: 4vh;
+        height: 4vh;
+        line-height: 30px;
+    }
+
+    .time-unit .label {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 769px) {
+    .seccionunomobile {
+        display: none;
+    }
+}
+
 
 
 /* SECCION 2 */
@@ -260,7 +386,6 @@ body {
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    margin-bottom: 50px;
     width: 100%;
     max-width: 1200px;
 }
@@ -319,5 +444,30 @@ body {
     color: #333A32;
     font-size: 40px;
 }
+.button3 {
+    padding: 15px 80px;
+    font-size: 18px;
+    margin-top: 0;
+}
+.headers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
 
-
+.headers h2 {
+    font-size: 32px;
+    font-family: 'DM sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.headers p {
+    font-size: 20px;
+    font-family: 'DM sans', sans-serif;
+    line-height: 1.2;
+}
