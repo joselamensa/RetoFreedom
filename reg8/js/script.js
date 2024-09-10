@@ -1,5 +1,5 @@
       // Establecer la fecha objetivo (ajusta esto a tu fecha deseada)
-      const countDownDate = new Date("Oct 14, 2024 19:05:00 GMT-0500").getTime();
+      const countDownDate = new Date("Oct 14, 2024 19:05:00 GMT-0600").getTime();
 
       // Actualizar el conteo regresivo cada segundo
       const x = setInterval(function() {
