@@ -1,0 +1,301 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/*seccion uno 1*/
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccionuno {
+    background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg8/backgrounds/Fondodiv1PC.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.right-section {
+    flex: 1;
+    text-align: right;
+}
+
+.img-logo {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 10vh;
+}
+
+.container1 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    margin-bottom: 1vh;
+}
+
+
+.container1 h3 {
+    color: #333A32;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.container1 p {
+    color: #333A32;
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 5vh;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 22px 90px;
+    background: linear-gradient(90deg, #4DBD49 20%, #80e17d 50%, #4DBD49 80%) !important;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    border: none !important;
+    border-radius: 11px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botonesglow {
+    animation: pisca 1.5s infinite;
+    box-shadow: 0px 0px 21px -6px #4DBD49;
+}
+
+.side-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.logofreedom1{
+    max-width: 70%;
+    height: auto;
+    margin: 1vh;
+}
+
+
+@keyframes pisca {
+    70% {
+        box-shadow: 0 0 0 25px rgba(0,0,0,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+}
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+
+  .timer-text {
+    margin-right: 20px;
+  }
+
+  .timer-text h2 {
+    font-size: 1.2em;
+    color: #333;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .time-unit span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4DBD49;
+  }
+
+  .time-unit .label {
+    font-size: 0.8em;
+    color: #666;
+  }
+
+/* SECCION 2 */
+.secciondos {
+    background-color: #282828;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.secciondos h1 {
+    font-size: 48px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    flex: 0 1 30%;
+    margin: 10px 2%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/*SECCION 3*/
+
+.secciontres {
+    background-color: #ffffff;
+    background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg8/backgrounds/Fondodiv3pc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.secciontres h1 {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+
+.cards-container-seccion3 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card3 {
+    flex: 0 1 calc(33.333% - 40px);
+    margin: 0 20px 20px;
+    display: flex;
+}
+
+.card3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.imagen-texto-container3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10vh;
+}
+
+.imagen-container3 {
+    flex: 0 1 50%;
+    padding-right: 20px;
+}
+
+.imagen-container3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.texto-container3 {
+    flex: 0 1 50%;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.texto-container3 h2 {
+    color: #FFFFFF;
+    font-size: 34px;
+}
+
+.texto-container3 ul li::marker {
+    color: #4DBD49;
+}
+
+.texto-container3 ul {
+    padding-inline-start: 2vh;
+}
+
+.texto-container3 ul li {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+
+.metodofreedom h1 {
+    color: #333A32;
+    font-size: 40px;
+}
+
+
