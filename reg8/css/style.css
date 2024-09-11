@@ -119,66 +119,130 @@ body {
     }
 }
 .reloj {
-    background: linear-gradient(90deg, #4DBD49 20%, #80e17d 50%, #4DBD49 80%) !important;
+    background: linear-gradient(90deg, #4DBD49, #80e17d);
 }
+
 .timer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin: 20px auto;
+    flex-wrap: wrap;
     max-width: 800px;
-    padding: 0 20px;
-  }
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+}
 
-  .timer-text {
-    margin-right: 40px;
-  }
+.timer-text {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-  .timer-text h2 {
-    font-size: 27px;
-    font-family: 'DM sans', sans-serif;
-    color: #333;
-  }
+.timer-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
 
-  .countdown {
+.countdown {
     display: flex;
-    justify-content: space-around;
-  }
+    justify-content: center;
+    gap: 20px;
+}
 
-  .time-unit {
+.time-unit {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
-  }
+}
 
-  .time-unit span {
-    font-size: 1.5em;
+.time-unit span {
+    font-size: 36px;
     font-weight: bold;
-    color: #3fdb54;
-    background-color: #000000;
-    padding: 10px 15px;
-    border-radius: 8px;
-    display: inline-block;
-    margin-bottom: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    width: 5vh;
-    height: 5vh;
-    line-height: 40px;
+    color: #ffffff;
+    padding: 15px;
+    min-width: 80px;
     text-align: center;
-  }
-  .time-unit .label {
-    font-size: 9.46px;
-    background: none;
-    padding: 0;
-    box-shadow: none;
-    color: #666;
-    width: auto;
-    height: auto;
-    line-height: normal;
-  }
-  
+    transition: all 0.3s ease;
+}
+
+.time-unit span#days,
+.time-unit span#hours,
+.time-unit span#minutes,
+.time-unit span#seconds {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.time-unit span:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.time-unit .label {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .timer-container {
+        padding-top: 15px;
+        padding-bottom: 0px;
+        flex-direction: column;
+    }
+
+    .timer-text {
+        margin-bottom: 10px;
+    }
+
+    .timer-text h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .countdown {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .time-unit {
+        margin: 0 5px;
+    }
+
+    .time-unit span {
+        font-size: 24px;
+        padding: 8px;
+        min-width: 40px;
+        height: 40px;
+    }
+
+    .time-unit .label {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+    .time-unit span {
+        font-size: 18px;
+        padding: 6px;
+        min-width: 30px;
+        height: 30px;
+    }
+
+    .time-unit .label {
+        font-size: 8px;
+    }
+}
+
 /* SECCION 1 MOBILE */
 .seccionunomobile {
     display: none;
@@ -259,49 +323,7 @@ body {
     .heaverdemobile {
         color: #4DBD49;
     }
-    /* Responsividad del timer */
-    .timer-container {
-        flex-direction: column;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
 
-    .timer-text {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .timer-text h2 {
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 0;
-    }
-
-    .countdown {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .time-unit {
-        margin: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .time-unit span {
-        font-size: 32px;
-        padding: 3px 6px;
-        width: 6vh;
-        height: 6vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .time-unit .label {
-        font-size: 16px;
-    }
 }
 
 @media (min-width: 769px) {
@@ -529,9 +551,10 @@ body {
         padding: 20px;
     }
     .tittodiv3mob {
-        width: 80%;
-        max-width: 400px;
+        width: 100%;
+        max-width: 600px;
         margin: 0 auto;
+        text-align: center;
     }
 
     .imagen-texto-container3mobile {
