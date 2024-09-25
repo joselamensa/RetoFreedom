@@ -107,7 +107,11 @@ body {
     height: auto;
     margin: 1vh;
 }
-
+.fechascardpc{
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 2vh;
+}
 
 @keyframes pisca {
     70% {
@@ -246,7 +250,11 @@ body {
 .seccionunomobile {
     display: none;
 }
-
+.fechascard{
+    max-width: 80%;
+    height: auto;
+    transform: translateY(-3vh);
+}
 @media (max-width: 768px) {
     .seccionuno {
         display: none;
@@ -308,14 +316,12 @@ body {
         font-size: 16px;
         color: #000000;
         margin-top: 3vh;
-        transform: translateY(-6vh);
 
     }
     .cta-button {
         padding: 2vh 12vh;
         font-size: 16px;
         margin-top: 2vh;
-        transform: translateY(-6vh);
 
     }
 
