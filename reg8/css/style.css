@@ -82,7 +82,7 @@ body {
 .cta-button {
     margin-top: 20px;
     padding: 2.75vh 11.25vh;
-    background: linear-gradient(90deg, #4DBD49 20%, #80e17d 50%, #4DBD49 80%) !important;
+    background-color: #e01717 !important;
     color: rgb(255, 255, 255);
     font-size: 24px;
     border: none !important;
@@ -94,7 +94,7 @@ body {
 
 .botonesglow {
     animation: pisca 1.5s infinite;
-    box-shadow: 0px 0px 21px -6px #4DBD49;
+    box-shadow: 0px 0px 21px -6px #e01717;
 }
 
 .side-image {
@@ -620,7 +620,7 @@ body {
         margin-top: 3vh;
         margin-bottom: 3vh;
         padding: calc(2vh + 5px) calc(8vh + 10px);
-        background: linear-gradient(90deg, #4DBD49 20%, #80e17d 50%, #4DBD49 80%) !important;
+        background-color: #e01717 !important;
         color: rgb(255, 255, 255);
         font-size: calc(12px + 0.5vw);
         border: none !important;
