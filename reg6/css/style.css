@@ -35,6 +35,18 @@ body {
     display: flex;
     align-items: flex-end;
 }
+.fechascardpc{
+    max-width: 30%;
+    height: auto;
+    filter: invert(100%) brightness(1000%);
+}
+.fechascard{
+    max-width: 80%;
+    height: auto;
+    margin-top: 2vh;
+    filter: invert(100%) brightness(1000%);
+}
+
 
 .container1 h1 {
     font-size: 48px;
@@ -42,6 +54,7 @@ body {
     line-height: 1.2;
     color: #FFFFFF;
     margin-bottom: 0;
+    margin-top: 0;
 }
 .container1 p {
     font-size: 30px;
@@ -110,7 +123,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     position: relative;
     overflow: hidden;

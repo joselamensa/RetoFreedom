@@ -36,6 +36,17 @@ body {
     text-align: left;
     padding-left: 10%;
 }
+.fechascardpc{
+    max-width: 75%;
+    height: auto;
+    margin-bottom: 2vh;
+}
+.fechascard{
+    max-width: 80%;
+    height: auto;
+    margin-top: 2vh;
+}
+
 
 .right-section {
     flex: 1;
@@ -45,7 +56,7 @@ body {
 .img-logo {
     max-width: 40%;
     height: auto;
-    margin-bottom: 10vh;
+    margin-bottom: 3vh;
 }
 
 .container1 h1 {
@@ -165,7 +176,7 @@ body {
 }
 
 .testing {
-    margin-top: -10vh;
+    margin-top: -12vh;
 }
 /* SECCION 2 */
 .secciondos {
