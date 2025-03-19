@@ -5,7 +5,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
+    color: #ffffff;
     background-color: #f4f4f4;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -21,7 +21,7 @@ body {
 }
 
 .seccionuno {
-    background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg4/backgrounds/Group%20297.webp');
+    background-image: url('../../imgs/reg4/fondo1pc.webp');
     background-size: cover;
     background-position: center;
     height: 85vh;
@@ -60,6 +60,7 @@ body {
 }
 
 .container1 h1 {
+    color: #E6E6E6;
     font-size: 36px;
     font-weight: bold;
     margin: 0;
@@ -70,7 +71,7 @@ body {
 
 
 .container1 h3 {
-    color: #333A32;
+    color: #000000;
     font-size: 32px;
     font-weight: bold;
     margin: 0px;
@@ -78,7 +79,7 @@ body {
 }
 
 .container1 p {
-    color: #333A32;
+    color: #E6E6E6;
     font-size: 24px;
     margin: 0px;
     margin-bottom: 5vh;
@@ -89,7 +90,7 @@ body {
     padding: 22px 90px;
     background-color: #e01717 !important;
     color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: 16px;
     border: none !important;
     border-radius: 11px;
     cursor: pointer;
@@ -126,10 +127,10 @@ body {
 /* SECCION 1 MOBILE */
 
 .seccionmobile {
-    height: auto;
+    min-height: 90vh;
     background-color: rgb(255, 255, 255);
-    background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg4/backgrounds/Rectangle%202.webp');
-    background-position: 46.83% 68.0242%;
+    background-image: url('../../imgs/reg4/Rectangle\ 192.png');
+    background-position: 99% 99%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -176,12 +177,12 @@ body {
 }
 
 .testing {
-    margin-top: -12vh;
+    margin-top: 40vh;
 }
 /* SECCION 2 */
 .secciondos {
     background-image: url('https://retofreedom.sfo3.cdn.digitaloceanspaces.com/reg4/backgrounds/Group%20272.webp');
-    height: 1645.41px;
+    height: 1400px;
     background-position: 54.6539% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,18 +198,14 @@ body {
 }
 
 .container2 h2 {
-    color: #ffffff;
+    color: #000000;
     font-size: 36px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .container2 h1 {
-    background: linear-gradient(to right, #75DE71, #61CE5D, #4DBD49);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #000000;
     font-size: 48px;
     margin-top: 10px;
 }
@@ -360,7 +357,7 @@ body {
         font-size: 12px;
     }
     .logo2 {
-        margin-bottom: 0;
+        margin-top: 3vh;
     }
     .botonmobile {
         margin-bottom: 3vh;
